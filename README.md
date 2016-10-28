@@ -8,6 +8,8 @@ Just do this:
 	cd ~
 	git clone https://github.com/ChanMo/vimrc.git ~/vimrc
 	ln -s ~/vimrc/.vimrc .
+	vim
+	:PluginInstall
 	
 ## Update
 
@@ -25,7 +27,7 @@ Just do this:
 * goyo
 
 
-## Coloe Schemes
+## Color Scheme
 
 * solarlized
 * peaksea
