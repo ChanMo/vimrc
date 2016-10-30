@@ -6,11 +6,6 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-" Plugin 'tpope/vim-fugitive'
-" Plugin 'L9'
-" Plugin 'git://git.wincent.com/command-t.git'
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
@@ -35,11 +30,16 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 set encoding=utf-8
-set number
+" set number
 syntax enable
 
 set background=dark
 colorscheme solarized
+
+" convent tab to space
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 " map
 let mapleader=","
@@ -50,7 +50,7 @@ map <c-k> <c-w>k
 map <c-h> <c-w>h
 map <c-l> <c-w>l
 
-command W w !sudo tee % > /dev/null
+" command W w !sudo tee % > /dev/null
 
 " iab
 iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>

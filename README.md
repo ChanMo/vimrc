@@ -3,7 +3,11 @@
 my vimrc file.
 
 ## How to use this vimrc?
-Just do this:
+Download Vundle first:
+
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+Download the .vimrc::
 
 	cd ~
 	git clone https://github.com/ChanMo/vimrc.git ~/vimrc
