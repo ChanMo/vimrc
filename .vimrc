@@ -33,12 +33,18 @@ set encoding=utf-8
 " set number
 syntax enable
 
+" 256 support
+if ! has("gui_running")
+  set t_Co=256
+endif
+
 set background=dark
-colorscheme solarized
+colorscheme peaksea
+
 
 " convent tab to space
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 " map
@@ -54,3 +60,9 @@ map <c-l> <c-w>l
 
 " iab
 iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
+
+" filetypes
+autocmd Filetype html setlocal ts=2 sw=2
+autocmd Filetype scss setlocal ts=2 sw=2
+autocmd Filetype css setlocal ts=2 sw=2
+autocmd Filetype javascript setlocal ts=2 sw=2
