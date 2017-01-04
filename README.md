@@ -2,6 +2,8 @@
 
 my vimrc file.
 
+支持微信小程序wxml，wxss
+
 ## How to use this vimrc?
 Download Vundle first:
 

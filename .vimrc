@@ -23,6 +23,8 @@ Plugin 'tomasr/molokai'
 
 " code mode
 Plugin 'pangloss/vim-javascript'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'skammer/vim-css-color'  " css mode
 
 
 call vundle#end()            " required
@@ -62,7 +64,11 @@ map <c-l> <c-w>l
 iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 
 " filetypes
+autocmd Filetype python setlocal ts=4 sw=4
 autocmd Filetype html setlocal ts=2 sw=2
 autocmd Filetype scss setlocal ts=2 sw=2
 autocmd Filetype css setlocal ts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sw=2
+autocmd BufRead,BufNewFile *.wxss set filetype=css " Wechat
+autocmd BufRead,BufNewFile *.wxml set filetype=xml " Wechat
+autocmd BufRead,BufNewFile *.wxml let b:syntastic_skip_checks=1 " Skip Error
