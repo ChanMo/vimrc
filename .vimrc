@@ -23,8 +23,10 @@ Plugin 'tomasr/molokai'
 
 " code mode
 Plugin 'pangloss/vim-javascript'
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'skammer/vim-css-color'  " css mode
+" Plugin 'hail2u/vim-css3-syntax'
+" Plugin 'skammer/vim-css-color'  " css mode
+Plugin 'leafgarland/typescript-vim'
+Plugin 'HerringtonDarkholme/yats.vim'
 
 
 call vundle#end()            " required
