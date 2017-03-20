@@ -12,6 +12,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
+Plugin 'Valloric/YouCompleteMe'
 
 " write
 Plugin 'junegunn/goyo.vim'
